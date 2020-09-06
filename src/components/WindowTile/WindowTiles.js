@@ -32,22 +32,42 @@ class WindowTiles extends Component {
   render() {
     // return <ul>{this.renderItems()}</ul>;
     return (
-      <section>
-        <header>
-          <div className="menu">
-            <img src="images/menu.png" alt="Menu" className="menu" />
-          </div>
-          <img src="images/logo.png" className="logo" alt="logo" />
-          <h1>Free shipping over $2000</h1>
-          <div className="mainframe">30% OFF WINDOWS</div>
-          <div className="title">Window Type</div>
-        </header>
-        <div className="container">{this.renderItems()}</div>
-        <div>
-          <img className="search" src="images/search.png" alt="logo" />
-          <img src="images/info.png" className="info" alt="logo" />
-        </div>
-      </section>
+      <>
+        <section>
+          <header>
+            <div className="header">
+              <img src="images/logo.png" className="logo" alt="logo" />
+              <img src="images/menu.png" className="menu" alt="logo" />
+              <div className="shipping">Free shipping over $2000</div>
+              <div className="mainframe">
+                <span className="mainText">30% off on windows</span>
+              </div>
+              <div className="title">Window Type</div>
+              <img className="search" src="images/search.png" alt="logo" />
+              <img src="images/info.png" className="info" alt="logo" />
+            </div>
+          </header>
+          <div className="wrapper">{this.renderItems()}</div>
+        </section>
+      </>
+      // <section>
+      //   <header>
+      //     <div className="menu">
+      //       <img src="images/logo.png" className="logo" alt="logo" />
+      //       <img src="images/menu.png" alt="Menu" />
+      //     </div>
+      //     <div className="shipping">Free shipping over $2000</div>
+      //     <div className="mainframe">
+      //       <h2>30% OFF WINDOWS</h2>
+      //     </div>
+      //     <div className="title">Window Type</div>
+      //   </header> <div className="container">{this.renderItems()}</div>
+      //   <div>
+      //     <img className="search" src="images/search.png" alt="logo" />
+      //     <img src="images/info.png" className="info" alt="logo" />
+      //   </div>
+      //
+      // </section>
     );
   }
 }

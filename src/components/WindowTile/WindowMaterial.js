@@ -33,7 +33,7 @@ class WindowMaterial extends Component {
     return (
       <section>
         <header>
-          <div className="menu">
+          <div>
             <img src="images/menu.png" alt="Menu" className="menu" />
           </div>
           <img src="images/logo.png" className="logo" alt="logo" />
