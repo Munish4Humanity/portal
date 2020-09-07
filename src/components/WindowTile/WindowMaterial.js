@@ -33,20 +33,32 @@ class WindowMaterial extends Component {
     return (
       <section>
         <header>
-          <div>
-            <img src="images/menu.png" alt="Menu" className="menu" />
+          <div className="header">
+            <img src="images/logo.png" className="logo" alt="logo" />
+            <img src="images/menu.png" className="menu" alt="logo" />
+            <div className="title">Window Material</div>
+            <img className="search" src="images/search.png" alt="logo" />
+            <img src="images/info.png" className="info" alt="logo" />
           </div>
-          <img src="images/logo.png" className="logo" alt="logo" />
-          {/* <h1>Free shipping over $2000</h1>
-          <div className="mainframe">30% OFF WINDOWS</div> */}
-          <div className="title">Window Material</div>
         </header>
-        <div className="container">{this.renderItems()}</div>
-        <div>
-          <img className="search" src="images/search.png" alt="logo" />
-          <img src="images/info.png" className="info" alt="logo" />
-        </div>
+        <div className="wrapper">{this.renderItems()}</div>
       </section>
+      // <section>
+      //   <header>
+      //     <div>
+      //       <img src="images/menu.png" alt="Menu" className="menu" />
+      //     </div>
+      //     <img src="images/logo.png" className="logo" alt="logo" />
+      //     {/* <h1>Free shipping over $2000</h1>
+      //     <div className="mainframe">30% OFF WINDOWS</div> */}
+      //     <div className="title">Window Material</div>
+      //   </header>
+      //   <div className="container">{this.renderItems()}</div>
+      //   <div>
+      //     <img className="search" src="images/search.png" alt="logo" />
+      //     <img src="images/info.png" className="info" alt="logo" />
+      //   </div>
+      // </section>
     );
   }
 }
