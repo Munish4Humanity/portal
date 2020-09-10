@@ -34,11 +34,11 @@ class WindowMaterial extends Component {
       <section>
         <header>
           <div className="header">
-            <img src="images/logo.png" className="logo" alt="logo" />
-            <img src="images/menu.png" className="menu" alt="logo" />
+            <img src="images/logo.svg" className="logo" alt="logo" />
+            <img src="images/menu.svg" className="menu" alt="logo" />
             <div className="title">Window Material</div>
-            <img className="search" src="images/search.png" alt="logo" />
-            <img src="images/info.png" className="info" alt="logo" />
+            <img className="search" src="images/search.svg" alt="logo" />
+            <img src="images/info.svg" className="info" alt="logo" />
           </div>
         </header>
         <div className="wrapper">{this.renderItems()}</div>
