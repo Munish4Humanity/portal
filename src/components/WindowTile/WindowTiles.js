@@ -25,7 +25,12 @@ class WindowTiles extends Component {
   }
   renderItems() {
     return this.state.tiles.map((item) => (
-      <SingleTile key={item.name} item={item} />
+      <>
+        <SingleTile key={item.name} item={item} />
+        {/* if(item.options.length() {'>'} 1)
+        {<SingleTile1 key={item.options.name} item={item} />}else
+        {<SingleTile key={item.name} item={item} />} */}
+      </>
     ));
   }
 

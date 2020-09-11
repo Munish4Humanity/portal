@@ -4,6 +4,7 @@ import ReactDom from 'react-dom';
 import ReactBootstrap from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
+
 const SingleTile = ({ item }) => (
   <div className="items">
     <img
@@ -12,10 +13,14 @@ const SingleTile = ({ item }) => (
       src={`https://assets.ff-24.net/${item.image}`}
     ></img>
     <div className="pricered">
-      $2<div className="more">more..</div>
+      $2
+      <div className="more">
+        <Example />
+      </div>
     </div>
   </div>
 );
+
 function Example() {
   const [show, setShow] = useState(false);
 
@@ -24,10 +29,9 @@ function Example() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <a className="more" href="#" onClick={handleShow}>
         more..
-      </Button>
-
+      </a>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Title</Modal.Title>
