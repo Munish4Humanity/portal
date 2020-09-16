@@ -4,15 +4,16 @@ import ReactDom from 'react-dom';
 import ReactBootstrap from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
-
-const SingleTile = ({ item }) => (
+const DoubleTile = ({ item, i }) => (
   <div className="items">
-    <img
+    <h1>{i}1</h1>
+    {/* <img
       alt="window"
       className="center"
-      src={`https://assets.ff-24.net/${item.image}`}
-    ></img>
-    <h1>{item.name}</h1>
+      img={`https://assets.ff-24.net/{tiles.options$[i].image`}
+    ></img> */}
+
+    {/* <div className="wtitle">{item.options[i].name}</div> */}
     <div className="pricered">
       $2
       <div className="more">
@@ -21,7 +22,6 @@ const SingleTile = ({ item }) => (
     </div>
   </div>
 );
-
 function Example() {
   const [show, setShow] = useState(false);
 
@@ -50,4 +50,4 @@ function Example() {
     </>
   );
 }
-export default SingleTile;
+export default DoubleTile;

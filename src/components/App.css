@@ -1,11 +1,19 @@
 #root {
   text-align: center;
+  position: relative;
+  width: 823px;
 }
 .section {
-  width: 400px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+}
+h1 {
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /* body {
   width: 823px;
@@ -151,17 +159,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 512px;
 }
 /* Description */
 
 .desc {
   position: absolute;
-  left: 10.7%;
-  right: 11.04%;
-  top: 70.56%;
-  bottom: 13.38%;
-
+  top: 75%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -194,15 +198,15 @@
   color: #ff0000;
 }
 .wrapper {
-  top: 60%;
+  top: 55%;
   /* border: 1px solid #ddd; */
   display: flex;
   overflow-x: auto;
   position: absolute;
   width: 823px;
-  height: 277px;
   left: 0;
   right: 0;
+  bottom: 20px;
   margin: auto;
   background: #ffffff;
 }
@@ -210,16 +214,50 @@
   width: 0;
 }
 .wrapper .items {
-  min-width: 270px;
-  height: 250px;
   text-align: center;
   background-color: #fff;
-  margin-right: 4px;
+  margin-right: 30px;
   border: 1px solid #000;
+  background: linear-gradient(
+    134.05deg,
+    rgba(34, 80, 13, 0) 1.02%,
+    rgba(13, 39, 80, 0.095) 101.5%
+  );
+  border: 1px solid #0d2750;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  background: linear-gradient(
+    134.05deg,
+    rgba(34, 80, 13, 0) 1.02%,
+    rgba(13, 39, 80, 0.095) 101.5%
+  );
+  border: 1px solid #0d2750;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.wrapper .subitems {
+  position: absolute;
+  top: 60%;
+  min-width: 360px;
+  height: 650px;
+  text-align: center;
+  background-color: #fff;
+  margin-right: 30px;
+  border: 1px solid #000;
+  background: linear-gradient(
+    134.05deg,
+    rgba(34, 80, 13, 0) 1.02%,
+    rgba(13, 39, 80, 0.095) 101.5%
+  );
+  border: 1px solid #0d2750;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 .more {
-  /* price+ */
-  margin-left: 80%;
+  margin-right: 220%;
   top: 91.48%;
   bottom: 3.41%;
   font-family: Roboto;
@@ -232,3 +270,110 @@
   margin-bottom: 10%;
   color: #000;
 }
+.wtitle {
+  position: absolute;
+  margin-left: 2%;
+  top: 70.48%;
+  bottom: 3.41%;
+  margin-bottom: 20%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+/* ------------------
+.boxwrap {
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+#box1 {
+  position: relative;
+  left: 7.02%;
+  right: 7.37%;
+  top: 7.06%;
+  bottom: 30.66%;
+  border-radius: 3px;
+}
+#box2 {
+  position: absolute;
+  left: 3.34%;
+  right: 3.69%;
+  top: 9.73%;
+  bottom: 33.09%;
+
+  background: linear-gradient(
+    134.05deg,
+    rgba(34, 80, 13, 0) 1.02%,
+    rgba(13, 39, 80, 0.095) 101.5%
+  );
+  border: 1px solid #0d2750;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+#box3 {
+  position: absolute;
+  left: 0%;
+  right: 0.34%;
+  top: 12.9%;
+  bottom: 36.25%;
+
+  background: linear-gradient(
+    134.05deg,
+    rgba(34, 80, 13, 0) 1.02%,
+    rgba(13, 39, 80, 0.19) 101.5%
+  );
+  border: 1px solid #0d2750;
+  box-sizing: border-box;
+  border-radius: 3px;
+  z-index: 3;
+}
+*/
+p {
+  color: #000;
+  font-size: 24px;
+  z-index: 9;
+}
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+} */
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+} */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+} */
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+} */
