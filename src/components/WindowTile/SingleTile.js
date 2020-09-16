@@ -6,20 +6,22 @@ import { Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
 
 const SingleTile = ({ item }) => (
-  <div className="items">
-    <img
-      alt="window"
-      className="center"
-      src={`https://assets.ff-24.net/${item.image}`}
-    ></img>
-    <h1>{item.name}</h1>
-    <div className="pricered">
-      $2
-      <div className="more">
-        <Example />
+  <>
+    <div id="slide" className="items">
+      <img
+        alt="window"
+        className="center"
+        src={`https://assets.ff-24.net/${item.image}`}
+      ></img>
+      <h1>{item.name}</h1>
+      <div className="pricered">
+        $2
+        <div className="more">
+          <Example />
+        </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
 function Example() {

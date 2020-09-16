@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
 
 import SingleTile from './SingleTile';
+import ReactBootstrap from 'react-bootstrap';
+import $ from 'jquery';
+$(document).ready(function () {
+  $(this).show('slide', { direction: 'left' }, 1000);
+  // $('#slide').animate({ width: 'toggle' }, 3050);
+  $('#slide').click(function () {
+    $(this).show('slide', { direction: 'left' }, 1000);
+  });
+  //   var boxWidth = $('.box').width();
+  //   $('.slide-left').click(function () {
+  //     $('.box').animate({
+  //       width: 0,
+  //     });
+  //   });
+  //   $('.slide-right').click(function () {
+  //     $('.box').animate({
+  //       width: boxWidth,
+  //     });
+  //   });
+});
 
 class WindowTiles extends Component {
   constructor(props) {
@@ -23,6 +43,7 @@ class WindowTiles extends Component {
       })
       .catch((error) => console.log(error));
   }
+
   renderItems() {
     return this.state.tiles.map((item) => (
       <>
@@ -47,7 +68,7 @@ class WindowTiles extends Component {
             <img className="search" src="images/search.png" alt="logo" />
             <img src="images/info.png" className="info" alt="logo" />
           </div>
-          {/* <div className="wrapper">{this.renderItems()}</div> */}
+          <div className="wrapper">{this.renderItems()}</div>
         </section>
       </>
     );

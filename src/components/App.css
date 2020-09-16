@@ -3,56 +3,13 @@
   position: relative;
   width: 823px;
   margin: 0 auto;
-  position: relative;
+  height: 100vh;
 }
 .section {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-}
-h1 {
-  width: 100px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-/* body {
-  width: 823px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  overflow: hidden;
-} */
-/* section {
-  height: 1020px;
-  width: 100%;
-  /* width: calc(100%-16px);
-  position: absolute;
-  overflow-y: scroll;
-
-  left: 0;
-  right: 0;
-
-  margin: auto; 
-} */
-.title {
-  position: absolute;
-  height: 56px;
-  left: 31px;
-  top: 284px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  display: flex;
-  align-items: center;
-
-  color: #000000;
 }
 .header {
   position: absolute;
@@ -65,8 +22,6 @@ h1 {
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* Logo */
-
 .logo {
   position: absolute;
   left: 3.73%;
@@ -81,8 +36,6 @@ h1 {
   top: 17%;
   bottom: 91.5%;
 }
-/* Free shipping over $2000 */
-
 .shipping {
   position: absolute;
   width: 287px;
@@ -102,7 +55,6 @@ h1 {
   color: #0d2750;
 }
 .mainframe {
-  /* main_frame */
   position: absolute;
   left: 26.61%;
   right: 26.49%;
@@ -114,6 +66,7 @@ h1 {
   border-radius: 4px;
   color: #fff;
 }
+
 .mainText {
   position: absolute;
   font-family: Roboto;
@@ -127,6 +80,42 @@ h1 {
   margin-top: 4px;
   color: #ffffff;
 }
+.title {
+  position: absolute;
+  height: 56px;
+  left: 31px;
+  top: 284px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vw;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.search {
+  position: absolute;
+  left: 90.04%;
+  right: -6.08%;
+  top: 149.78%;
+  bottom: 81.82%;
+  /* FF Color */
+}
+.info {
+  position: absolute;
+  right: 15%;
+  top: 150%;
+}
+h1 {
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 70%;
+}
+
 .container {
   position: absolute;
   top: 35%;
@@ -148,24 +137,11 @@ h1 {
   font-size: 50px;
 }
 
-.search {
-  position: absolute;
-  left: 90.04%;
-  right: -6.08%;
-  top: 149.78%;
-  bottom: 81.82%;
-  /* FF Color */
-}
-.info {
-  position: absolute;
-  right: 15%;
-  top: 150%;
-}
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 512px;
+  width: 60%;
 }
 /* Description */
 
@@ -235,6 +211,7 @@ h1 {
   text-align: center;
   background-color: #fff;
   border: 1px solid #000;
+  clear: both;
   background: linear-gradient(
     134.05deg,
     rgba(34, 80, 13, 0) 1.02%,
@@ -243,6 +220,8 @@ h1 {
   border: 1px solid #0d2750;
   box-sizing: border-box;
   border-radius: 3px;
+  min-width: 512px;
+  min-height: 256px;
 }
 .wrapper .subitems {
   position: absolute;
@@ -291,95 +270,32 @@ h1 {
   align-items: center;
   color: #000;
 }
-/* ------------------
-.boxwrap {
-  margin-left: auto;
-  margin-right: auto;
-  top: 50px;
-}
 
-.box {
-  width: 100%;
-  height: 100%;
-}
-
-#box1 {
-  position: relative;
-  left: 7.02%;
-  right: 7.37%;
-  top: 7.06%;
-  bottom: 30.66%;
-  border-radius: 3px;
-}
-#box2 {
-  position: absolute;
-  left: 3.34%;
-  right: 3.69%;
-  top: 9.73%;
-  bottom: 33.09%;
-
-  background: linear-gradient(
-    134.05deg,
-    rgba(34, 80, 13, 0) 1.02%,
-    rgba(13, 39, 80, 0.095) 101.5%
-  );
-  border: 1px solid #0d2750;
-  box-sizing: border-box;
-  border-radius: 3px;
-}
-
-#box3 {
-  position: absolute;
-  left: 0%;
-  right: 0.34%;
-  top: 12.9%;
-  bottom: 36.25%;
-
-  background: linear-gradient(
-    134.05deg,
-    rgba(34, 80, 13, 0) 1.02%,
-    rgba(13, 39, 80, 0.19) 101.5%
-  );
-  border: 1px solid #0d2750;
-  box-sizing: border-box;
-  border-radius: 3px;
-  z-index: 3;
-}
-*/
 p {
   color: #000;
   font-size: 24px;
   z-index: 9;
 }
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
+
+/* sliding Effect */
+/* .box {
+  float: left;
+  width: 823px;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 9;
+}
+
+.box-inner {
+  width: 512px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 } */
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-} */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-} */
-/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-} */
+
+/* Iphone X */
