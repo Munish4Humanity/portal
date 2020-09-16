@@ -27,9 +27,6 @@ class WindowTiles extends Component {
     return this.state.tiles.map((item) => (
       <>
         <SingleTile key={item.name} item={item} />
-        {/* if(item.options.length() {'>'} 1)
-        {<SingleTile1 key={item.options.name} item={item} />}else
-        {<SingleTile key={item.name} item={item} />} */}
       </>
     ));
   }
@@ -39,40 +36,20 @@ class WindowTiles extends Component {
     return (
       <>
         <section>
-          <header>
-            <div className="header">
-              <img src="images/logo.png" className="logo" alt="logo" />
-              <img src="images/menu.png" className="menu" alt="logo" />
-              <div className="shipping">Free shipping over $2000</div>
-              <div className="mainframe">
-                <span className="mainText">30% off on windows</span>
-              </div>
-              <div className="title">Window Type</div>
-              <img className="search" src="images/search.png" alt="logo" />
-              <img src="images/info.png" className="info" alt="logo" />
+          <div className="header">
+            <img src="images/logo.svg" className="logo" alt="logo" />
+            <img src="images/menu.svg" className="menu" alt="logo" />
+            <div className="shipping">Free shipping over $2000</div>
+            <div className="mainframe">
+              <span className="mainText">30% off on windows</span>
             </div>
-          </header>
-          <div className="wrapper">{this.renderItems()}</div>
+            <div className="title">Window Type</div>
+            <img className="search" src="images/search.png" alt="logo" />
+            <img src="images/info.png" className="info" alt="logo" />
+          </div>
+          {/* <div className="wrapper">{this.renderItems()}</div> */}
         </section>
       </>
-      // <section>
-      //   <header>
-      //     <div className="menu">
-      //       <img src="images/logo.png" className="logo" alt="logo" />
-      //       <img src="images/menu.png" alt="Menu" />
-      //     </div>
-      //     <div className="shipping">Free shipping over $2000</div>
-      //     <div className="mainframe">
-      //       <h2>30% OFF WINDOWS</h2>
-      //     </div>
-      //     <div className="title">Window Type</div>
-      //   </header> <div className="container">{this.renderItems()}</div>
-      //   <div>
-      //     <img className="search" src="images/search.png" alt="logo" />
-      //     <img src="images/info.png" className="info" alt="logo" />
-      //   </div>
-      //
-      // </section>
     );
   }
 }

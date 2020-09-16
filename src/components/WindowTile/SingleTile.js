@@ -30,9 +30,11 @@ function Example() {
 
   return (
     <>
-      <a className="more" href="#" onClick={handleShow}>
-        more..
-      </a>
+      {
+        <a className="more" href="#" onClick={handleShow}>
+          more..
+        </a>
+      }
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Title</Modal.Title>
